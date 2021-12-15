@@ -1,0 +1,468 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  border: 5px solid #e7e7e7;
+}
+
+/*--------------------------------------Menor a 576--------------------------------------*/
+/*Header*/
+header {
+  background-color: #93d1d7;
+  padding-top: 5px;
+}
+
+header img {
+  display: none;
+}
+
+header .nombre {
+  margin-left: 3%;
+}
+
+header .nombre p {
+  margin: 5px;
+}
+
+header .nombre p:first-child {
+  font-size: 6vw;
+  margin-top: 0;
+  color: white;
+}
+
+header .nombre p:nth-child(2) {
+  font-size: 7vw;
+}
+
+header .nombre p:last-child {
+  font-size: 4vw;
+  color: white;
+  font-style: italic;
+}
+
+header .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 0;
+  width: 100%;
+}
+
+header .datos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+header .datos span {
+  color: white;
+  font-size: 3vw;
+}
+
+/*Cuerpo*/
+.cuerpo .descripcion {
+  display: none;
+}
+
+.cuerpo .titulo {
+  margin: 2.5%;
+  font-weight: bolder;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+.cuerpo .competencias {
+  margin-top: 10px;
+}
+
+.cuerpo .competencias .aptitudes ul {
+  margin-bottom: 0;
+}
+
+.cuerpo .competencias .idioma ul {
+  list-style-type: none;
+  width: 40%;
+  display: inline-block;
+}
+
+.cuerpo .competencias .idioma ul li {
+  margin-bottom: 3px;
+}
+
+.cuerpo .competencias p:last-child {
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.cuerpo .educacion div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.7vw;
+}
+
+.cuerpo .educacion div section {
+  margin-bottom: 10px;
+}
+
+.cuerpo .educacion div section p:last-child {
+  font-size: 2.3vw;
+}
+
+.cuerpo .educacion div section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cuerpo .educacion div section:last-child p:first-child {
+  font-weight: bolder;
+}
+
+.cuerpo .experiencia div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.6vw;
+}
+
+.cuerpo .experiencia div section:first-child p:last-child {
+  font-size: 2.3vw;
+}
+
+.cuerpo .experiencia div section:last-child p:first-child {
+  font-weight: bolder;
+}
+
+.cuerpo .experiencia div section {
+  margin-bottom: 10px;
+}
+
+.cuerpo .experiencia div section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cuerpo .experiencia div section ul {
+  display: none;
+}
+
+.cuerpo .intereses ul {
+  list-style: none;
+  font-size: 2.6vw;
+}
+
+.cuerpo .intereses ul li {
+  margin-bottom: 5px;
+}
+
+.cuerpo .intereses ul li:before {
+  content: "✓ ";
+}
+
+/*--------------------------------------Mayor a 576 y menor a 992--------------------------------------*/
+@media screen and (min-width: 576px) {
+  /*Header*/
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  header img {
+    display: block;
+    width: 35%;
+  }
+  header .nombre {
+    width: 40%;
+  }
+  header .nombre p {
+    margin: 5px;
+  }
+  header .nombre p:first-child {
+    font-size: 5vw;
+    margin-top: 0;
+  }
+  header .nombre p:nth-child(2) {
+    font-size: 5.6vw;
+  }
+  header .nombre p:last-child {
+    font-size: 2.5vw;
+  }
+  header .datos {
+    display: block;
+    padding-left: 30px;
+    width: 25%;
+  }
+  header .datos i {
+    padding-left: 20px;
+  }
+  header .datos div {
+    width: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .datos span {
+    font-size: 2.3vw;
+  }
+  /*Cuerpo*/
+  .cuerpo .descripcion {
+    display: block;
+    padding: 10px;
+  }
+  .cuerpo .competencias .aptitudes {
+    width: 30%;
+    display: inline-block;
+  }
+  .cuerpo .competencias .idioma {
+    width: 30%;
+    display: inline-block;
+  }
+  .cuerpo .competencias .idioma ul {
+    display: inline-block;
+  }
+  .cuerpo .competencias .idioma ul li {
+    margin-bottom: 3px;
+  }
+  .cuerpo .competencias p:last-child {
+    width: 30%;
+    display: inline-block;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .cuerpo .competencias .titulo {
+    margin-bottom: 0;
+  }
+  .cuerpo .titulo {
+    font-size: 3vw;
+  }
+  .cuerpo .educacion div {
+    font-size: 2.3vw;
+  }
+  .cuerpo .educacion div section p:last-child {
+    font-size: 1.8vw;
+  }
+  .cuerpo .experiencia div section:first-child {
+    width: 25%;
+  }
+  .cuerpo .experiencia div section:first-child p:first-child {
+    font-size: 2.2vw;
+  }
+  .cuerpo .experiencia div section:first-child p:last-child {
+    font-size: 1.8vw;
+  }
+  .cuerpo .experiencia div section:last-child {
+    width: 70%;
+  }
+  .cuerpo .experiencia div section:last-child p:first-child {
+    font-size: 2.4vw;
+  }
+  .cuerpo .experiencia div section:last-child p:nth-child(2) {
+    font-size: 1.8vw;
+  }
+  .cuerpo .experiencia div section:last-child ul {
+    display: block;
+    font-size: 1.8vw;
+  }
+  .cuerpo .intereses ul {
+    font-size: 2.2vw;
+  }
+}
+
+/*--------------------------------------Mayor a 992--------------------------------------*/
+@media screen and (min-width: 992px) {
+  /*Header*/
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .nombre p:first-child {
+    font-size: 4vw;
+    margin-top: 0;
+  }
+  header .nombre p:nth-child(2) {
+    font-size: 5vw;
+  }
+  header .nombre p:last-child {
+    font-size: 1.8vw;
+  }
+  header .datos {
+    margin-top: 0;
+  }
+  header .datos i {
+    padding-top: 5px;
+    padding-left: 50px;
+  }
+  header .datos span {
+    font-size: 1.8vw;
+  }
+  /*Cuerpo*/
+  .cuerpo .descripcion {
+    font-size: 1.3vw;
+  }
+  .cuerpo .competencias .aptitudes {
+    font-size: 1.2vw;
+  }
+  .cuerpo .competencias .idioma {
+    font-size: 1.2vw;
+  }
+  .cuerpo .competencias p:last-child {
+    font-size: 1.2vw;
+  }
+  .cuerpo .titulo {
+    font-size: 1.8vw;
+  }
+  .cuerpo .educacion div {
+    font-size: 1.5vw;
+  }
+  .cuerpo .educacion div section p:last-child {
+    font-size: 1.2vw;
+  }
+  .cuerpo .experiencia div section:first-child p:first-child {
+    font-size: 1.3vw;
+  }
+  .cuerpo .experiencia div section:first-child p:last-child {
+    font-size: 1.2vw;
+  }
+  .cuerpo .experiencia div section:last-child p:first-child {
+    font-size: 1.5vw;
+  }
+  .cuerpo .experiencia div section:last-child p:nth-child(2) {
+    font-size: 1.3vw;
+  }
+  .cuerpo .experiencia div section:last-child ul {
+    font-size: 1.2vw;
+  }
+  .cuerpo .intereses ul {
+    font-size: 1.2vw;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabla tr:nth-of-type(1) th {
+  background-color: red;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(2) th {
+  background-color: green;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(3) th {
+  background-color: yellow;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(4) th {
+  background-color: blue;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(5) th {
+  background-color: orange;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(6) th {
+  background-color: pink;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(7) th {
+  background-color: grey;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hache h1 {
+  font-size: 10px;
+}
+
+.hache h2 {
+  font-size: 23px;
+}
+
+.hache h3 {
+  font-size: 3vw;
+}
+
+.hache h4 {
+  font-size: 19px;
+}
+
+.hache h5 {
+  font-size: 18px;
+}
+
+.hache h6 {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 576px) {
+  table {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  table {
+    width: 50%;
+  }
+}
+
+.container {
+  background-color: #3b3a3a;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,338 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 4vw;
+    color: #689597;
+    text-decoration: underline;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+footer {
+    display: grid;
+    justify-items: end;
+    padding-right: 15px;
+}
+
+ul {
+    margin-top: 2rem;
+    list-style: none;
+    font-size: 2vw;
+}
+
+/*Section*/
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(176, 233, 235);
+    animation: section-border 5s infinite;
+    animation-direction: alternate;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 12px 12px 15px 0px rgba(0, 0, 0, 0.72);
+    box-shadow: 12px 12px 15px 0px rgba(0, 0, 0, 0.72);
+}
+
+@keyframes section-border {
+    0% {
+        border: 3px dashed rgb(233, 105, 216);
+    }
+
+    100% {
+        border: 3px dashed rgb(176, 233, 235);
+
+    }
+
+}
+
+section>div {
+    height: 12vw;
+    /* background-color: rgb(255, 255, 255);*/
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+/*--------------------------------------Item1---------------------------------------------*/
+#item1 {
+    grid-row: 1/3;
+    height: auto;
+    background-image: url("images/coachella-astronaut.png");
+    background-size: 180% 180%;
+    background-repeat: no-repeat;
+    animation: img1 7s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img1 {
+    100% {
+        background-size: 120% 120%;
+    }
+}
+
+/*--------------------------------------Item2---------------------------------------------*/
+#item2 {
+    border: 0;
+}
+
+#item2 div {
+    background-image: url("images/coachella_logo.png");
+    background-size: 100% 100%;
+    width: 55%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: img2 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img2 {
+    100% {
+        transform: translate(79%);
+    }
+
+}
+
+/*--------------------------------------Item3---------------------------------------------*/
+#item3 {
+    grid-column: 3/5;
+    background-image: url("images/coachella-mountain-top.jpg");
+    background-size: 100% 100%;
+}
+
+#item3 div {
+    height: 100%;
+    background-size: 100%;
+    border: 0;
+    animation: img3 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img3 {
+
+    0% {
+        background-image: url("images/coachella-mountainc-colorized-top.jpeg");
+        opacity: 0;
+    }
+
+    100% {
+        background-image: url("images/coachella-mountainc-colorized-top.jpeg");
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------Item4---------------------------------------------*/
+#item4 {
+    background-image: url("images/coachella-mountain-left.jpg");
+    background-size: 100% 100%;
+}
+
+#item4 div {
+    height: 100%;
+    background-size: 100%;
+    border: 0;
+    animation: img4 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img4 {
+
+    0% {
+        background-image: url("images/coachella-mountainc-colorized-left.jpeg");
+        opacity: 0;
+    }
+
+    100% {
+        background-image: url("images/coachella-mountainc-colorized-left.jpeg");
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------Item5---------------------------------------------*/
+#item5 {
+    background-image: url("images/coachella-mountain-right.jpg");
+    background-size: 100% 100%;
+}
+
+#item5 div {
+    height: 100%;
+    background-size: 100%;
+    border: 0;
+    animation: img5 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img5 {
+
+    0% {
+        background-image: url("images/coachella-mountainc-colorized-right.jpeg");
+        opacity: 0;
+    }
+
+    100% {
+        background-image: url("images/coachella-mountainc-colorized-right.jpeg");
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------Item6---------------------------------------------*/
+#item6 {
+    grid-row: 2/4;
+    height: auto;
+    background-image: url("images/chica1.jpeg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+#i6 {
+
+    height: 100%;
+    background-size: 100%;
+    border: 0;
+}
+
+/*imagen6*/
+.img6 {
+    animation: img6 6s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img6 {
+
+    0% {
+        background-image: url("images/chica2.jpeg");
+        opacity: 0;
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-image: url("images/chica2.jpeg");
+        opacity: 1;
+        background-size: 100% 100%;
+        transform: scale(1.5);
+
+    }
+
+}
+
+/*--------------------------------------Item7---------------------------------------------*/
+#item7 {
+    overflow: hidden;
+}
+
+#item7 div {
+    background-image: url("images/coachella-people.jpg");
+    height: 100%;
+    border: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: background_rotate 6s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes background_rotate {
+    50% {
+        transform: scale(1.25);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--------------------------------------Item8---------------------------------------------*/
+#item8 {
+    grid-column: 3/5;
+    background-image: url("images/coachella-collage.jpg");
+    animation: background_move 10s infinite;
+    animation-direction: alternate;
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+}
+
+@keyframes background_move {
+    from {
+        background-position-y: 0%;
+        background-position-x: 50%;
+    }
+
+    to {
+        background-position-y: 100%;
+        background-position-x: 50%;
+    }
+}
+
+/*--------------------------Adaptacion dispositivo---------------------------*/
+@media screen and (max-width: 650px) {
+
+    section {
+        grid-template-columns: auto auto;
+    }
+
+    section>div {
+        height: 21vw;
+    }
+
+    #item3 {
+        grid-column: 1/3;
+        grid-row: 1/2
+    }
+
+    #item4 {
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+
+    #item5 {
+        grid-column: 2/3;
+        grid-row: 2/3
+    }
+
+    #item7 {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+
+    #item2 {
+        grid-column: 2/3;
+        grid-row: 3/4
+    }
+
+    #item1 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-size: 110% 100%;
+        background-repeat: no-repeat;
+        height: 34vw !important;
+        width: 75%;
+        justify-self: center;
+    }
+
+    #item6 {
+        display: none;
+    }
+
+    #item8 {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+    ul {
+        font-size: 3vw;
+    }
+
+
+}

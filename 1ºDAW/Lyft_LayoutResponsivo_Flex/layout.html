@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Layout Responsivo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="https://www.lyft.com/" target="_blank" ><img alt="Logo lyft" src="img/LogoM2.jpg" /></a>
+            <nav>
+                <div class="icon"><i class="fa fa-bars fa-2x"></i></div>
+                <div class="menu_item">CITIES</div>
+                <div class="menu_item">DRIVE</div>
+                <div class="menu_item">BLOG</div>
+                <div class="menu_item">PARTNERS</div>
+                <div class="menu_item">HELP</div>
+              </nav>
+        </header>
+        <div id="tarifa">
+            <picture>
+                <source media="(min-width: 993px)" srcset="img/fondogrande.jpeg" />
+                <source media="(min-width:576px)" srcset="img/lyft-presskit-23.jpg" />
+                <img src="img/Driver_wearing_a_mask_in_the_car.jpg" />
+              </picture>
+              <p>Make up to $36/hr <br>Drivig Your Car</p>
+        </div>
+        <div id="calc">
+            <h1>See How Much You Can Make</h1>
+            <p>How many hours do you want to drive this week?</p>
+            <div>
+                <input id="horas" type="text"  name="horas" placeholder="Hours" required />
+                <input id="ciudad" type="text" name="ciudad" placeholder="City" required />
+                <button>Calculate</button>
+            </div>
+        </div>
+        <div id="formulario">
+            <h1>Apply Now</h1>
+            <h2>Enter your info, and then download the Lyft app to create your driver profile.</h2>
+            <section>
+                <input type="text"  name="Nombre" placeholder="First Name" required />
+                <input type="text"  name="Apellidos" placeholder="Last Name" required />
+                <input type="text"  name="Email" placeholder="Email" required />
+                <input type="text"  name="Ciudad" placeholder="City" required />
+                <input type="text"  name="Movil" placeholder="Phone Number" required />
+                <input type="text"  name="Cod_promo" placeholder="Promo Code (optional)" />
+            </section>
+            <input id="terms" type="checkbox" name="terminos de uso" value="Agree" required/>
+            <p>I agree to the <span>Lyft terms</span>.</p>
+            <div id="boton"><button>BECOME A DRIVER</button></div>
+            
+        </div>
+        <div id="pie">
+            <div id="doc">
+                <a class="hipervinculos" href="https://www.lyft.com/terms"><p>Terminos</p></a>
+                <a class="hipervinculos" href="https://www.lyft.com/privacy"><p>Privacidad</p></a>  
+            </div>   
+            <div id="redes">    
+            <a href="https://twitter.com/lyft" target="_blank"><img alt="Logo de Twitter" src="img/twt.png" /></a>
+            <a href="https://www.facebook.com/lyft" target="_blank"><img alt="Logo de Facebook" src="img/face.png" /></a>
+            <a href="https://www.instagram.com/lyft/?hl=es" target="_blank"><img alt="Logo de Instagram" src="img/ins.png" /></a>
+            </div> 
+        </div>
+    </div>
+    <script>
+        $(function() {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function() {
+            $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu_item").show();
+            }
+            });
+        });
+    </script>
+</body>
+
+</html> 

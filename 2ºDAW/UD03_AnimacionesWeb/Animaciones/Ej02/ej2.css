@@ -1,0 +1,115 @@
+body {
+    margin: 10px auto;
+    width: 90%;
+}
+
+#container {
+
+    background-image: url("img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#container div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    height: 12vw;
+}
+
+#sol {
+    background-image: url("img/sol.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 6vw !important;
+    animation: agrandar 3s linear infinite;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+@keyframes agrandar {
+
+    0% {}
+
+    100% {
+        transform: scale(2.5, 2.5);
+    }
+}
+
+#container div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-self: end;
+    overflow: hidden;
+    height: 20vw;
+    margin-top: 3vw;
+}
+
+#santa-claus {
+    background-image: url("img/santa-claus.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 15vw !important;
+    animation: desplazar-santa 4s ease-out infinite;
+
+}
+
+@keyframes desplazar-santa {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translate(-540px, -50px);
+    }
+
+    100% {
+        transform: translate(-1900px, 50px);
+    }
+}
+
+#container div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20vw;
+    margin-top: 8vw;
+}
+
+#muñeco {
+    background-image: url("img/Snowman.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw !important;
+    animation: bailar 5s alternate infinite;
+    margin-left: 63vw;
+
+}
+
+@keyframes bailar {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+p {
+    font-size: x-large
+}

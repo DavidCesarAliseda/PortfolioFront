@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabla tr:nth-of-type(1) th {
+  background-color: red;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(2) th {
+  background-color: green;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(3) th {
+  background-color: yellow;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(4) th {
+  background-color: blue;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(5) th {
+  background-color: orange;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(6) th {
+  background-color: pink;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla tr:nth-of-type(7) th {
+  background-color: grey;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hache h1 {
+  font-size: 10px;
+}
+
+.hache h2 {
+  font-size: 23px;
+}
+
+.hache h3 {
+  font-size: 3vw;
+}
+
+.hache h4 {
+  font-size: 19px;
+}
+
+.hache h5 {
+  font-size: 18px;
+}
+
+.hache h6 {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 576px) {
+  table {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  table {
+    width: 50%;
+  }
+}
+
+.container {
+  background-color: #3b3a3a;
+  color: white;
+}
+/*# sourceMappingURL=tabla.css.map */

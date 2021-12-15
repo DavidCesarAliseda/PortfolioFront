@@ -1,0 +1,164 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------Menor a 576--------------------------------------*/
+
+header {
+    font-size: 4.5vw;
+}
+
+.ventajas p {
+    font-size: 4vw;
+}
+
+.oferta {
+    background-color: rgb(22, 99, 169);
+}
+
+.oferta p {
+    font-size: 4.6vw;
+}
+
+.oferta span {
+    font-size: 10vw;
+}
+
+.titulo {
+    font-size: 5vw;
+}
+
+form p,
+form input,
+form select,
+form label,
+form textarea {
+    font-size: 4.1vw !important;
+}
+
+form select {
+    height: 9vw !important;
+}
+
+@media screen and (min-width: 576px) {
+
+    header {
+        font-size: 3.7vw;
+    }
+
+    .ventajas p {
+        font-size: 2.5vw;
+    }
+
+    .oferta {
+        background-color: rgb(22, 99, 169);
+    }
+
+    .oferta p {
+        font-size: 3.5vw;
+    }
+
+    .oferta span {
+        font-size: 7.5vw;
+    }
+
+    .titulo {
+        font-size: 3.8vw;
+    }
+
+    form p,
+    form input,
+    form select,
+    form label,
+    form textarea {
+        font-size: 2.8vw !important;
+    }
+
+    form select {
+        height: 7.5vw !important;
+    }
+
+    .check label {
+        font-size: 2.6vw !important;
+    }
+
+    input[type=checkbox] {
+        /* FF */
+        -moz-transform: scale(1.5);
+        /* Safari y Chrome */
+        -webkit-transform: scale(1.5);
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    header {
+        font-size: 2vw;
+    }
+
+    .ventajas p:first-child{
+        font-size: 1.2vw !important;
+    }
+
+    .ventajas p {
+        font-size: 1vw;
+    }
+
+    .ventajas span{
+        color: #686561;
+        font-weight: 500;
+        font-size: 1vw;
+    }
+
+    .descr{
+        color: #74706a;
+    }
+
+    .oferta {
+        background-color: rgb(22, 99, 169);
+    }
+
+    .oferta p {
+        font-size: 1vw;
+    }
+
+    .oferta span {
+        font-size: 3.2vw;
+    }
+
+    .titulo {
+        font-size: 1.7vw;
+        
+    }
+
+    form p,
+    form input,
+    form select,
+    form label,
+    form textarea {
+        font-size: 0.9vw !important;
+        color: #74706a;
+    }
+
+    form select {
+        height: 2.3vw !important;
+    }
+
+    .check label {
+        font-size: 1vw !important;
+    }
+
+    input[type=checkbox] {
+        /* FF */
+        -moz-transform: scale(1);
+        /* Safari y Chrome */
+        -webkit-transform: scale(1);
+        padding: 10px;
+    }
+
+    textarea{
+        height: 8.5vw;
+    }
+
+}

@@ -1,0 +1,262 @@
+body {
+    background-color: black;
+    min-width: 400px;
+}
+
+#principal {
+    background-image: url("images/pared.JPG");
+    width: 95%;
+    margin: 0 auto;
+    animation: storm 3s infinite;
+    -webkit-box-shadow: -24px 33px 50px -6px #000000;
+    box-shadow: -24px 33px 50px -6px #000000;
+}
+
+@keyframes storm {
+    20% {
+        -webkit-box-shadow: -24px 33px 50px -6px #000000;
+        box-shadow: -24px 33px 50px -6px #000000;
+    }
+
+    50% {
+        -webkit-box-shadow: 0px 0px 50px 6px #ffffff;
+        box-shadow: 0px 0px 50px 6px #ffffff;
+    }
+
+    55% {
+        -webkit-box-shadow: -24px 33px 50px -6px #000000;
+        box-shadow: -24px 33px 50px -6px #000000;
+    }
+
+    65% {
+        -webkit-box-shadow: 0px 0px 50px 6px #ffffff;
+        box-shadow: 0px 0px 50px 6px #ffffff;
+    }
+
+    90% {
+        -webkit-box-shadow: -24px 33px 50px -6px #000000;
+        box-shadow: -24px 33px 50px -6px #000000;
+    }
+}
+
+pre {
+    margin-top: 3vw;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 1vw;
+    animation: letter-storm 3s infinite;
+}
+
+@keyframes letter-storm {
+
+    20% {
+        color: rgb(80, 80, 80);
+    }
+
+    50% {
+        color: silver;
+    }
+
+    55% {
+        color: rgb(80, 80, 80);
+    }
+
+    65% {
+        color: silver;
+    }
+
+    90% {
+        color: rgb(80, 80, 80);
+    }
+}
+
+span {
+    animation: blood-storm 3s infinite;
+    color: rgb(107, 9, 9);
+}
+
+@keyframes blood-storm {
+
+    20% {
+        color: rgb(107, 9, 9);
+    }
+
+    50% {
+        color: red;
+    }
+
+    55% {
+        color: rgb(107, 9, 9);
+    }
+
+    65% {
+        color: red;
+    }
+
+    900% {
+        color: rgb(107, 9, 9);
+    }
+}
+
+#gifs {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    height: 15vw;
+}
+
+#soldier1 {
+    background-image: url("images/soldier1.gif");
+}
+
+#dog {
+    background-image: url("images/dog.gif");
+    width: 15%;
+}
+
+#soldier2 {
+    background-image: url("images/soldier2.gif");
+}
+
+#boss {
+    background-image: url("images/boss.gif");
+    width: 20%;
+}
+
+#blazkowicz {
+    background-image: url("images/blazkowicz.gif");
+    height: 100%;
+    width: 20%;
+}
+
+section div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 80%;
+}
+
+#soldier1,
+#soldier2 {
+    width: 18%;
+}
+
+#barra-carga {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    height: auto;
+}
+
+#barra {
+    width: 80%;
+    height: auto;
+    background-color: azure;
+}
+
+#carga {
+    width: 0;
+    height: 1.4vw;
+    animation: carga 7s infinite linear;
+    font-weight: bold;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#carga::before {
+    content: "";
+    animation: cantidad-carga 7s infinite;
+    padding-right: 1rem;
+}
+
+@keyframes carga {
+    0% {
+        background-color: rgb(255, 129, 129);
+        color: black;
+    }
+
+    100% {
+        width: 100%;
+        background-color: rgb(119, 0, 0);
+        color: white;
+    }
+}
+
+@keyframes cantidad-carga {
+    10% {
+        content: ""
+    }
+
+    20% {
+        content: "20%"
+    }
+
+    40% {
+        content: "40%"
+    }
+
+    60% {
+        content: "60%"
+    }
+
+    80% {
+        content: "80%"
+    }
+
+    100% {
+        content: "100%";
+    }
+}
+
+footer {
+    display: grid;
+    justify-items: end;
+    width: 95%;
+    margin-top: 1vw;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.4vw;
+    color: #C0C0C0;
+}
+
+@media screen and (max-width: 700px) {
+
+    #gifs {
+        height: 30vw;
+    }
+
+    #blazkowicz {
+        width: 35%;
+    }
+
+    #soldier1,
+    #soldier2 {
+        width: 30%;
+    }
+
+    #boss,
+    #dog {
+        display: none;
+    }
+
+    #carga {
+        height: 3vw;
+        font-size: 2.6vw;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 2.4vw;
+        color: #C0C0C0;
+    }
+
+    pre {
+        margin-top: 4vw;
+        font-size: 1.8vw;
+    }
+}

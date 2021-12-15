@@ -1,0 +1,439 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//Colores base
+$color-fondo: rgb(147, 209, 215);
+$color-blanco: rgb(255, 255, 255);
+
+//Broder separador del cuerpo
+$border-title: 1px solid rgb(0, 0, 0);
+
+//Simbolo checkbox
+$check: '✓ ';
+
+//None
+$none: "none";
+//Flex
+$flex: "flex";
+//Bolder
+$bolder: "bolder";
+
+//Dimensiones
+$cero: 0;
+$cinco-px: 5px;
+$diez-px: 10px;
+$cinco-pc: 5%;
+$unoconocho-vw: 1.8vw;
+$doscontres-vw: 2.3vw;
+$dosconseis-vw: 2.6vw;
+
+.container {
+    $anchura: 95%;
+    width: $anchura;
+    margin: $cero auto;
+    border: $cinco-px solid rgb(231, 231, 231);
+}
+
+/*--------------------------------------Menor a 576--------------------------------------*/
+/*Header*/
+header {
+    background-color: $color-fondo;
+    padding-top: $cinco-px;
+
+    img {
+        display: #{$none};
+    }
+
+    .nombre {
+        $margen-izq: 3%;
+        margin-left: $margen-izq;
+
+        p {
+            margin: $cinco-px;
+        }
+
+        p:first-child {
+            $tamano-letra: 6vw;
+            font-size: $tamano-letra;
+            margin-top: $cero;
+            color: $color-blanco;
+        }
+
+        p:nth-child(2) {
+            $tamano-letra: 7vw;
+            font-size: $tamano-letra;
+        }
+
+        p:last-child {
+            $tamano-letra: 4vw;
+            font-size: $tamano-letra;
+            color: $color-blanco;
+            font-style: italic;
+        }
+    }
+    .datos {
+        display: #{$flex};
+        justify-content: space-around;
+        margin-top: $cinco-pc;
+        margin-left: $cero;
+        width: 100%;
+        div {
+            display: #{$flex};
+            justify-content: space-between;
+            margin-bottom: $cinco-px;
+        }
+        span {
+            $tamano-letra: 3vw;
+            color: $color-blanco;
+            font-size: $tamano-letra;
+        }
+    }
+}
+/*Cuerpo*/
+.cuerpo {
+    //Descripcion
+    .descripcion {
+        display: #{$none};
+    }
+    //Competencias
+    .titulo {
+        margin: 2.5%;
+        font-weight: #{$bolder};
+        width: 90%;
+        border-bottom: $border-title;
+    }
+    .competencias {
+        margin-top: $diez-px;
+        .aptitudes {
+            ul {
+                margin-bottom: $cero;
+            }
+        }
+        .idioma {
+            ul {
+                list-style-type: #{$none};
+                width: 40%;
+                display: inline-block;
+                li {
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        p:last-child {
+            margin-top: $cero;
+            margin-left: $cinco-pc;
+            margin-right: $cinco-pc;
+        }
+    }
+    //Educacion
+    .educacion {
+        div {
+            display: #{$flex};
+            justify-content: space-around;
+            font-size: 2.7vw;
+            section {
+                margin-bottom: $diez-px;
+                p:last-child {
+                    font-size: $doscontres-vw;
+                }
+                p {
+                    margin-top: $cero;
+                    margin-bottom: $cero;
+                }
+            }
+            section:last-child {
+                p:first-child {
+                    font-weight: #{$bolder};
+                }
+            }
+        }
+    }
+    //Experiencia
+    .experiencia {
+        div {
+            display: #{$flex};
+            justify-content: space-around;
+            font-size: $dosconseis-vw;
+            section:first-child {
+                p:last-child {
+                    font-size: $doscontres-vw;
+                }
+            }
+            section:last-child {
+                p:first-child {
+                    font-weight: #{$bolder};
+                }
+            }
+            section {
+                margin-bottom: $diez-px;
+                p {
+                    margin-top: $cero;
+                    margin-bottom: $cero;
+                }
+                ul {
+                    display: #{$none};
+                }
+            }
+        }
+    }
+    //INTERESES
+    .intereses {
+        ul {
+            list-style: #{$none};
+            font-size: $dosconseis-vw;
+
+            li {
+                margin-bottom: $cinco-px;
+            }
+        }
+        ul li:before {
+            content: $check;
+        }
+    }
+}
+/*--------------------------------------Mayor a 576 y menor a 992--------------------------------------*/
+@media screen and (min-width: 576px) {
+    $doscondos: 2.2vw;
+    /*Header*/
+    header {
+        display: #{$flex};
+        padding-top: $cero;
+        img {
+            display: block;
+            $anchura: 35%;
+            width: $anchura;
+        }
+        .nombre {
+            $anchura: 40%;
+            width: $anchura;
+            p {
+                margin: $cinco-px;
+            }
+            p:first-child {
+                $tamano-letra: 5vw;
+                font-size: $tamano-letra;
+                margin-top: $cero;
+            }
+            p:nth-child(2) {
+                font-size: 5.6vw;
+            }
+            p:last-child {
+                font-size: 2.5vw;
+            }
+        }
+        .datos {
+            display: block;
+            padding-left: 30px;
+            width: 25%;
+            i {
+                padding-left: 20px;
+            }
+            div {
+                $anchura: 50%;
+                width: $anchura;
+                justify-content: end;
+            }
+            span {
+                font-size: $doscontres-vw;
+            }
+        }
+    }
+    /*Cuerpo*/
+    .cuerpo {
+        //Descripcion
+        .descripcion {
+            display: block;
+            padding: $diez-px;
+        }
+        //Competencias
+        .competencias {
+            $tercio: 30%;
+            .aptitudes {
+                width: $tercio;
+                display: inline-block;
+            }
+            .idioma {
+                width: $tercio;
+                display: inline-block;
+                ul {
+                    display: inline-block;
+                    li {
+                        $margen-inferior:3px;
+                        margin-bottom: $margen-inferior;
+                    }
+                }
+            }
+            p:last-child {
+                width: $tercio;
+                display: inline-block;
+                margin: $cero;
+                $margen-izq: 5%;
+                margin-left: $margen-izq;
+            }
+            .titulo {
+                margin-bottom: $cero;
+            }
+        }
+        .titulo {
+            $tamano-letra: 3vw;
+            font-size: $tamano-letra;
+        }
+        //Educacion
+        .educacion {
+            div {
+                font-size: $doscontres-vw;
+                section {
+                    p:last-child {
+                        font-size: $unoconocho-vw;
+                    }
+                }
+            }
+        }
+        //Experiencia
+        .experiencia {
+            div {
+                section:first-child {
+                    $anchura: 25%;
+                    width: $anchura;
+                    p:first-child {
+                        font-size: $doscondos;
+                    }
+                    p:last-child {
+                        font-size: $unoconocho-vw;
+                    }
+                }
+                section:last-child {
+                    $anchura: 70%;
+                    width: $anchura;
+                    p:first-child {
+                        $tamano-letra: 2.4vw;
+                        font-size: $tamano-letra;
+                    }
+                    p:nth-child(2) {
+                        font-size: $unoconocho-vw;
+                    }
+                    ul {
+                        display: block;
+                        font-size: $unoconocho-vw;
+                    }
+                }
+            }
+        }
+        //INTERESES
+        .intereses {
+            ul {
+                font-size: $doscondos;
+            }
+        }
+    }
+}
+
+/*--------------------------------------Mayor a 992--------------------------------------*/
+@media screen and (min-width: 992px) {
+    //Dimensiones
+    $unocondos: 1.2vw;
+    $unocontres: 1.3vw;
+    $unoconcinco: 1.5vw;
+    /*Header*/
+    header {
+        align-items: center;
+        .nombre {
+            p:first-child {
+                $tamano-letra: 4vw;
+                font-size: $tamano-letra;
+                margin-top: $cero;
+            }
+            p:nth-child(2) {
+                $tamano-letra: 5vw;
+                font-size: $tamano-letra;
+            }
+            p:last-child {
+                font-size: $unoconocho-vw;
+            }
+        }
+        .datos {
+            margin-top: $cero;
+            i {
+                $padding-left: 50px;
+                padding-top: $cinco-px;
+                padding-left: $padding-left;
+            }
+            span {
+                font-size: $unoconocho-vw;
+            }
+        }
+    }
+    /*Cuerpo*/
+    .cuerpo {
+        //Descripcion
+        .descripcion {
+            font-size: $unocontres;
+        }
+        //Competencias
+        .competencias {
+            .aptitudes {
+                font-size: $unocondos;
+            }
+            .idioma {
+                font-size: $unocondos;
+            }
+            p:last-child {
+                font-size: $unocondos;
+            }
+        }
+        .titulo {
+            font-size: $unoconocho-vw;
+
+        }
+        //Educacion
+        .educacion {
+            div {
+                font-size: $unoconcinco;
+
+                section {
+                    p:last-child {
+                        font-size: $unocondos;
+                    }
+                }
+            }
+        }
+        //Experiencia
+        .experiencia {
+            div {
+                section:first-child {
+                    p:first-child {
+                        font-size: $unocontres;
+                    }
+
+                    p:last-child {
+                        font-size: $unocondos;
+                    }
+                }
+
+                section:last-child {
+                    p:first-child {
+                        font-size: $unoconcinco;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: $unocontres;
+                    }
+
+                    ul {
+                        font-size: $unocondos;
+                    }
+                }
+            }
+        }
+
+        //INTERESES
+        .intereses {
+
+            ul {
+                font-size: $unocondos;
+            }
+        }
+    }
+}

@@ -1,0 +1,390 @@
+/*576 y 992*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+p{
+    margin: 0;
+}
+
+/*--------------------------------------Menor a 576--------------------------------------*/
+#container{
+    width: 95%;
+    margin: 0px auto;
+    min-width: 230px;
+}
+
+/*-----header-----*/
+header{
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 25%;
+}
+.fa{
+    margin-right: 10px;
+    color: rgb(255, 101, 126);
+}
+.menu_item {
+    padding: 0.5em;
+    display: none;
+    font-family: 'Rubik', sans-serif;
+}
+/*-----tarifa-----*/
+#tarifa{
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+#tarifa img{
+    width: 100%;
+}
+#tarifa p{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 7px;
+    font-size: 4vw;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*-----Calc-----*/
+#calc{
+    margin-bottom: 4px;
+}
+#calc h1{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    font-size: 6vw;
+    color: rgb(212, 147, 169);
+    text-align: center;
+    font-weight: 600;
+    
+}
+#calc p{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    font-size: 4vw;
+    color: rgb(212, 147, 169);
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+    /*Calculador*/
+#calc div{
+    text-align: center;
+    padding-bottom: 5px;
+}
+#horas{
+    width: 25%;
+    font-size: 3.5vw;
+}
+#ciudad{
+    width: 45%;
+    margin-left: 1%;
+    font-size: 3.5vw;
+}
+#calc button{
+    margin-left: 1%;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(212, 147, 169);
+    border-color: rgb(212, 147, 169);
+    font-size: 3.5vw;
+    
+}
+/*-----Formulario-----*/
+#formulario{
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 5px;
+}
+#formulario h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin: 0px;
+    padding: 8px;
+    padding-bottom: 0px;
+    font-size: 8vw;
+    margin-left: 5%;
+}
+#formulario h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 3.7vw;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+    /*Input formulario*/
+#formulario section{
+    text-align: center;
+    
+}
+#formulario section input{
+    width: 80%;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 3.7vw;
+}
+    /*checkbox formulario*/
+#terms{
+    margin-left: 10%;
+    margin-top: 7px;
+}
+#formulario p{
+    display: inline-block;
+    font-size: 3.3vw;  
+}
+#formulario span{
+    color: rgb(212, 122, 152);
+}
+    /*boton formulario*/
+#boton{
+    text-align: center;
+}
+#formulario button{
+    
+    margin: 15px;
+    padding: 15px;
+    font-weight: normal;
+    font-size: 4vw;
+    border-radius: 4px;
+    background-color: rgb(230, 162, 184);
+    border-color: rgb(230, 162, 184);
+    color: rgb(255, 255, 255);
+}
+/*Pie*/
+#pie{
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+}
+#pie img{
+    width: 8%;
+    margin-left: 9px;
+}
+#doc{
+    width: 40%;
+    text-align: left;
+}
+#doc p{
+    display: inline-block;
+    font-size: 3vw;
+    margin-right: 10px;
+}
+#redes{
+    width: 60%;
+}
+
+    
+/*--------------------------------------Mayor a 576 y menor a 992--------------------------------------*/
+@media screen and (min-width: 576px){
+    #container{
+        position: relative;
+    }
+
+    /*-----header-----*/
+    header img{
+        width: 35%;
+    }   
+    
+    /*-----tarifa-----*/
+    #tarifa p{
+        top: 7%;
+        left: 60%;
+        font-size: 3.5vw;
+        background-color: rgba(0, 0, 0, 0.603);
+   }
+   /*-----Calc-----*/
+    #calc{
+        position: absolute;
+        left: 4%;
+        top: 37%;
+        background-color: rgba(0, 0, 0, 0.603);
+    }
+    #calc h1{
+        font-size: 3.5vw;
+    }
+    #calc p{
+        font-size: 2.5vw;
+    }
+    #horas{
+        font-size: 2vw;
+    }
+    #ciudad{
+        font-size: 2vw;
+    }
+    #calc button{
+        font-size: 2.5vw;
+    }
+
+    /*-----Formulario-----*/
+    #formulario h1{
+        font-size: 4.5vw;
+        
+    }
+    #formulario h2{
+        font-size: 2.9vw;
+    }
+    #formulario section{
+        margin-bottom: 3px;
+    }
+    #formulario section input{
+        font-size: 2.5vw;
+    }
+    #formulario p{
+        font-size: 2.3vw;
+        margin-left: 10px;
+    }
+
+    #formulario button{
+        font-size: 3vw;
+        padding: 10px;
+    }
+    #terms{
+        -moz-transform: scale(1.5); /* FF */
+        -webkit-transform: scale(1.5); /* Safari y Chrome */
+    }
+    /*-----Pie-----*/
+    #pie p{
+        font-size: 2.5vw;
+    }
+    #pie img{
+        width: 6%;
+
+    }
+}
+
+/*--------------------------------------Dispositivos grandes, desde 993--------------------------------------*/
+@media screen and (min-width: 993px){
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+   /*-----Header-----*/
+   header{
+       width: 100%;
+   }
+   header img{
+        width: 35%;
+   }
+   nav{
+    display: flex;
+   }
+   .menu_item {
+        display: inline-block;
+        font-size: 1.5vw;
+        color: rgb(245, 76, 104);
+        font-weight: 800;
+  }
+  .icon {
+        display: none;
+  }
+  
+   /*-----Tarifa-----*/
+    #tarifa{
+        width: 100%;
+    }
+    #tarifa p{
+        padding: 20px;
+        font-size: 3vw;
+        left: 5%;
+    }
+    /*-----Calc-----*/
+    #calc{
+        position: static;
+        background-color: rgba(179, 179, 179, 0.342);
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #calc h1{
+        font-size: 2.5vw;
+        color: rgb(0, 0, 0);    
+        text-align: left;
+        margin-left: 25px;
+    }
+    #calc p{
+        font-size: 1.7vw;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        margin-left: 25px;
+    }
+    #calc div{
+        text-align: left;
+        margin-left: 25px;
+    }
+    #horas{
+        width: 12%;
+        font-size: 1.5vw;
+    }
+    #ciudad{
+        width: 20%;
+        font-size: 1.5vw;
+    }
+    #calc button{
+        font-size: 1.5vw;
+        border-color: rgb(193, 96, 128);
+        background-color: rgb(193, 96, 128);
+    }
+
+    /*-----Formulario-----*/
+    #formulario{
+        position: absolute;
+        width: 30%;
+        top: 45%;
+        left: 58%;
+        background-color: rgba(163, 163, 163, 0.795);
+        border-radius: 3px;
+    }
+    #formulario h1{
+        font-size: 2vw;
+        
+    }
+    #formulario h2{
+        font-size: 1.2vw;
+    }
+    #formulario section{
+        margin-bottom: 3px;
+    }
+    #formulario section input{
+        font-size: 1vw;
+    }
+    #formulario p{
+        font-size: 1vw;
+        margin-left: 5px;
+    }
+
+    #formulario button{
+        font-size: 1vw;
+        padding: 10px;
+        border-color: rgb(193, 96, 128);
+        background-color: rgb(193, 96, 128);
+    }
+    #terms{
+        -moz-transform: scale(1); /* FF */
+        -webkit-transform: scale(1); /* Safari y Chrome */
+    }
+
+    #formulario span{
+        color: rgb(187, 64, 105);
+    }
+    /*-----Pie-----*/
+    #pie p{
+        font-size: 1vw;
+    }
+    #pie img{
+        width: 4%;
+
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 95%;
+    padding-top: 30px;
+    min-width: 900px;
+}
+
+#container {
+    border: 2px solid rgb(236, 159, 172);
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-shadow: 8px 8px 0px 1px #BEBEBE;
+    box-shadow: 8px 8px 0px 1px #BEBEBE;
+}
+
+section {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 13%;
+}
+
+#horas {
+    width: 6%;
+}
+
+#horas div:nth-of-type(n+2) {
+    background-color: #D8D8D8;
+}
+
+
+#horas div:nth-last-child(2) {
+    height: 130px;
+}
+
+#horas,
+div p:last-child {
+    font-weight: bold;
+}
+
+section div {
+    height: 60px;
+    margin: 5px;
+}
+
+section div:first-child {
+    background-color: #3F3F3F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rojo {
+    background-color: #FD0000;
+}
+
+.azul {
+    background-color: #00AEEF;
+}
+
+.amarillo {
+    background-color: #FEBF00;
+}
+
+.vacio {
+    background-color: #D8D8D8;
+}
+
+.rojo,
+.amarillo,
+.azul {
+    color: #FFFFE9;
+}
+
+p {
+    padding: 3px 0 0 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+}
+
+section div:first-child p {
+    font-size: 0.9rem;
+}
